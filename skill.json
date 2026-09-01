@@ -1,0 +1,38 @@
+{
+  "name": "genpark-influencer-affiliate-attribution-conversion-aggregator-skill",
+  "version": "1.0.0",
+  "description": "GenPark AI Agent Skill - Influencer affiliate attribution conversion aggregator unifying promo codes, UTM parameters, and sub-ID clickstreams.",
+  "author": "genpark",
+  "category": "attribution-analytics",
+  "tags": [
+    "affiliate-attribution",
+    "promo-code-tracking",
+    "creator-payouts",
+    "roas-analytics",
+    "conversion-tracking"
+  ],
+  "inputs": {
+    "creator_affiliate_code": {
+      "type": "string"
+    },
+    "tracking_window_days": {
+      "type": "integer"
+    }
+  },
+  "outputs": {
+    "attribution_batch_id": {
+      "type": "string"
+    },
+    "total_attributed_orders_count": {
+      "type": "integer"
+    },
+    "gross_merchandise_value_usd": {
+      "type": "number"
+    },
+    "return_on_ad_spend_roas": {
+      "type": "number"
+    }
+  },
+  "entrypoint": "client.py",
+  "example": "example_usage.py"
+}
